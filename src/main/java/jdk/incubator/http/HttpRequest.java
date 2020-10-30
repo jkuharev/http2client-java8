@@ -413,6 +413,16 @@ public abstract class HttpRequest {
          * @return a {@code HttpRequest}
          */
         public abstract Builder POST(BodyPublisher bodyPublisher);
+        
+        /**
+         * Sets the request method of this builder to PATCH and sets its
+         * request body publisher to the given value.
+         *
+         * @param bodyPublisher the body publisher
+         *
+         * @return a {@code HttpRequest}
+         */
+        public abstract Builder PATCH(BodyPublisher bodyPublisher);
 
         /**
          * Sets the request method of this builder to PUT and sets its
