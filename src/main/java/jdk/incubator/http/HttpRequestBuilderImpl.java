@@ -170,6 +170,11 @@ class HttpRequestBuilderImpl extends HttpRequest.Builder {
     public HttpRequest.Builder POST(BodyPublisher body) {
         return method0("POST", requireNonNull(body));
     }
+    
+    @Override
+    public HttpRequest.Builder PATCH(BodyPublisher body) {
+        return method0("PATCH", requireNonNull(body));
+    }
 
     @Override
     public HttpRequest.Builder DELETE(BodyPublisher body) {
